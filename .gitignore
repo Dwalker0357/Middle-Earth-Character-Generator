@@ -1,0 +1,7 @@
+#From python
+__pycache__/
+
+#From Testing
+.coverage
+.coverage.*
+.pytest_cache/
