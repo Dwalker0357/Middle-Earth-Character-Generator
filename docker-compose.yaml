@@ -1,0 +1,60 @@
+version: '3.7'
+services:
+
+  service-1:
+    build: ./service-1
+    image: dwalker0357/service-1
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    deploy:
+      replicas: 2
+  
+
+
+  service-2:
+    build: ./service-2
+    image: dwalker0357/service-2
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+    deploy:
+      replicas: 2
+
+
+
+  service-3:
+    build: ./service-3
+    image: dwalker0357/service-3
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+    deploy:
+      replicas: 2
+      
+  
+
+  service-4:
+    build: ./service-4
+    image: dwalker0357/service-4
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
+    deploy:
+      replicas: 2
+
+
+
+  service-5:
+    build: ./service-5
+    image: dwalker0357/service-5
+    ports:
+    - target: 5004
+      published: 5004
+      protocol: tcp
+    deploy:
+      replicas: 2
