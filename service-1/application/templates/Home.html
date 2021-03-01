@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        
+        <center><form style="color:rgb(255, 255, 255)" method ="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <center><legend>Character Name</legend></center>
+                <br>
+                <div style= class: ="form-group">
+                    
+                    {{ form.name(class="form-control form-control-lg") }}
+                    <br>
+                </div>
+            </fieldset>
+            <center><div class="form-group"></center>
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form></center>
+
+        <center><h1 style="color:purple">{{ Stature }} {{ Race }} From {{ Location }}</h2></center>
+        <center><h2 style="color:purple">{{ Rank }} {{ Profession }}</h1></center>
+        
+    <br>
+</head>
+<body background="{{ Background }}"></body>
+
+<center><h2 style="color:salmon">{{ Grade }} {{ Weapon }}</h2></center>
+        <br>
+        <br>
+        <center><h2 style="color:gold">{{ Stance }}</h3></center>
+        <br>
+        <center><h2 style="color:gold">{{ Trait_1 }}</align></h3></center>
+        <center><h2 style="color:gold">{{ Trait_2 }}</h3></center>
+        <center><h2 style="color:gold">{{ Trait_3 }}</h3></center>
+        
+        
+     <br>   
+     <center><h3 style="color:red">{{ Melee_Prowess }} Melee Combat</h3>
+     <h3 style="color:green">{{ Archery_Prowess }} Ranged Combat</h3>
+     <h3 style="color:red">{{ Strength }} Strength</h3>
+     <h3 style="color:red">{{ Endurance }} Endurance</h3>
+     <h3 style="color:teal">{{ Intelligence }} Intelligence</h3>
+     <h3 style="color:teal">{{ Awareness }} Awareness</h3>
+     <h3 style="color:green">{{ Dexterity }} Dexterity</h3>
+     <h3 style="color:green">{{ Dodge }} Dodge</h3></center>
+     
+
+        
+        
+
+
+        
+
+
+
+
+
+
+
+    </body>
+</html>
