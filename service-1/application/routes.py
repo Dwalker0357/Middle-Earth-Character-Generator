@@ -5,7 +5,7 @@ from application.models import lotr_character
 import requests
 import os 
 
-# Setting a path and variable to display images
+# # Setting a path and variable to display images
 
 PicFolder = os.path.join("static","pics")
 app.config["UPLOAD_FOLDER"] = PicFolder
