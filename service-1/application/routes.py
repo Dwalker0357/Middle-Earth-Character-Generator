@@ -5,7 +5,7 @@ from application.models import lotr_character
 import requests
 import os 
 
-# # Setting a path and variable to display images
+# Setting a path and variable to display images
 
 PicFolder = os.path.join("static","pics")
 app.config["UPLOAD_FOLDER"] = PicFolder
@@ -15,7 +15,7 @@ app.config["UPLOAD_FOLDER"] = PicFolder
 @app.route('/', methods=["GET","POST"])
 @app.route('/Home',methods=["GET","POST"])
 def Home():
-    Background = os.path.join(app.config["UPLOAD_FOLDER"],"LOTR_Background.jpg")
+    Background = os.path.join(app.config["UPLOAD_FOLDER"],"LOTR_Background.png")
      
    # Requesting the first set of standard objects from service-2
     Race = requests.get("http://service-2:5001/Race")

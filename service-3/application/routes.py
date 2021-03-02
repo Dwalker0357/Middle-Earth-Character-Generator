@@ -9,7 +9,7 @@ import random
 @app.route("/Grade", methods=["GET"])
 def Grade():
     Grade_List = ["Broken", "Rusty", "Shoddy", "Blunt", "Serviceable", "Honed", "Freshy Forged" ,"Eleven Mastercrafted" ,"Dwarven Mastercrafted"]
-    Grade = Grade_List[random.randrange(0,9)]
+    Grade = Grade_List[random.randrange(0,1)]
     return Response(Grade,mimetype='text/plain')
 
 
@@ -20,7 +20,7 @@ def Weapon():
     "Dual-Wield Short Axes", "Dual-Wield Short Swords", "Dual-Wield Long Swords", "ShortBow", "Longbow", "Crossbow", "Cavalry Bow", "ShortSword And Shield", 
     "LongSword And Shield", "Morning Star And Shield" "Polearm", "Warhammer","Spiked Fist", "Short Axe And Shield", "Elfen Sabre", "Falchion", "FoeHammer", 
     "Sting", "Morgul Blade", "Narsil", "Goblin Cleaver", "Anduril"]
-    Weapon = Weapon_List[random.randrange(0,29)]
+    Weapon = Weapon_List[random.randrange(0,1)]
     return Response(Weapon,mimetype='text/plain')
 
 
@@ -28,7 +28,7 @@ def Weapon():
 @app.route("/Stance", methods=["GET"])
 def Stance():
     Stance_List = ["Clumsy", "Light-Footed", "Lightning Fast", "Rock Solid", "Immovable", "Veteran Combatant", "Martial Artist", "Cripple"]
-    Stance = Stance_List[random.randrange(0,8)]
+    Stance = Stance_List[random.randrange(0,1)]
     return Response(Stance,mimetype='text/plain')
 
 
@@ -37,7 +37,7 @@ def Stance():
 def Trait_1():
     Trait_1_List = ["Odin Force Disease Resist", "Sickly", "Built Different", "Pigeon Chest", "Massive Natural Biceps", "Kleptomaniac",
     "Savant","Cracked Personality", "Slight of Hand", "Pyromaniac", "Arsenist", "Mystic", "Mental", "High"]
-    Trait_1 = Trait_1_List[random.randrange(0,14)]
+    Trait_1 = Trait_1_List[random.randrange(0,1)]
     return Response(Trait_1,mimetype='text/plain')
 
 
@@ -46,7 +46,7 @@ def Trait_1():
 def Trait_2():
     Trait_2_List = ["Orc Hater", "Human Hater", "Elf Hater", "Dwarf Hater", "Goblin Hater", "Hobbit Hater", "Idiot", "Genius", "Fearless", 
     "Odin Force Healing", "Expert Horse Rider", "God Fearing", "Blind", "Evil", "Naive", "Grizzled"]
-    Trait_2 = Trait_2_List[random.randrange(0,16)]
+    Trait_2 = Trait_2_List[random.randrange(0,1)]
     return Response(Trait_2,mimetype='text/plain')
 
 
@@ -55,5 +55,5 @@ def Trait_2():
 def Trait_3():
     Trait_3_List = ["Natural Sprinter", "Low Stamina", "Unending Stamina", "Grand-Master Strategist", "Weak", "Stonks", "Paranoid", "Heroic", "Anemic",
     "Grumpy","Lazy", "Confused", "Drunk", "Troubled", "Damaged", "Snapped Up", "Hench"]
-    Trait_3 = Trait_3_List[random.randrange(0,17)]
+    Trait_3 = Trait_3_List[random.randrange(0,1)]
     return Response(Trait_3,mimetype='text/plain')

@@ -8,7 +8,7 @@ import random
 @app.route("/Race", methods=["GET"])
 def Race():
     Race_List = ["Orc", "Woodland Elf", "Human", "Dwarf", "Goblin", "High Elf", "Ent", "Hobbit", "Nazgûl", "Uruk-Hai", "Dúnedain", "Orge", "Troll", "Ghost Pirate"]
-    Race = Race_List[random.randrange(0,14)]
+    Race = Race_List[random.randrange(0,1)]
     return Response(Race,mimetype='text/plain') 
 
 
@@ -17,7 +17,7 @@ def Race():
 @app.route("/Stature", methods=["GET"])
 def Stature():
     Stature_List = ["Tiny", "Small", "Average", "Large", "Massive", "Gigantic", "Colossal", "Stocky"]
-    Stature = Stature_List[random.randrange(0,8)]
+    Stature = Stature_List[random.randrange(0,1)]
     return Response(Stature,mimetype='text/plain') 
     
 
@@ -26,7 +26,7 @@ def Stature():
 @app.route("/Location", methods=["GET"])
 def Location():
     Location_List = ["The Shire", "Erebor", "Gondor", "Helm's Deep", "Isengard", "Lothlórien", "Mordor", "Mirkwood", "Rivendell", "Rohan", "Fangorn Forest", "Moria"]
-    Location = Location_List[random.randrange(0,12)]
+    Location = Location_List[random.randrange(0,1)]
     return Response(Location,mimetype='text/plain') 
 
 
@@ -35,7 +35,7 @@ def Location():
 @app.route("/Rank", methods=["GET"])
 def Rank():
     Rank_List = ["Novice", "Apprentice","Journeyman", "Adept", "Master", "Grand-Master"]
-    Rank = Rank_List[random.randrange(0,6)]
+    Rank = Rank_List[random.randrange(0,1)]
     return Response(Rank,mimetype='text/plain')
 
 
@@ -44,5 +44,5 @@ def Rank():
 @app.route("/Profession", methods=["GET"])
 def Profession():
     Profession_List = ["FootSoldier","Duelist", "Berserker", "Knight", "Wizard", "Assassin", "Ranger", "Druid", "Scout", "Raider", "Mercenary"]
-    Profession = Profession_List[random.randrange(0,11)]
+    Profession = Profession_List[random.randrange(0,1)]
     return Response(Profession,mimetype='text/plain')

@@ -84,16 +84,16 @@ class Test_Service_5_Grade(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Melee_Prowess(g) is 1 then the result will be 5(b) because FootSoldier += 3 
+# varible Melee_Prowess(g) is 1 then the result will be 1000(b) because FootSoldier += 999
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Melee_Prowess(TestBase):
     def test_Melee_Prowess_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "4"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Melee_Prowess'),data="FootSoldier")
-                self.assertIn(b"4", response.data)
+                self.assertIn(b"100", response.data)
 
 
 
@@ -230,16 +230,16 @@ class Test_Service_5_Melee_Prowess(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Archery_Prowess(g) is 1 then the result will be 5(b) because FootSoldier += 2 
+# varible Archery_Prowess(g) is 1 then the result will be 1000(b) because FootSoldier += 999 
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Archery_Prowess(TestBase):
     def test_Archery_Prowess_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "3"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Archery_Prowess'),data="FootSoldier")
-                self.assertIn(b"3", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -378,16 +378,16 @@ class Test_Service_5_Archery_Prowess(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Strength(g) is 1 then the result will be 4(b) because FootSoldier += 3 
+# varible Strength(g) is 1 then the result will be 1000(b) because FootSoldier += 999
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Strength(TestBase):
     def test_Strength_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "4"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Strength'),data="FootSoldier")
-                self.assertIn(b"4", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -524,16 +524,16 @@ class Test_Service_5_Strength(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Endurance(g) is 1 then the result will be 4(b) because FootSoldier += 3 
+# varible Endurance(g) is 1 then the result will be 1000(b) because FootSoldier += 999 
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Endurance(TestBase):
     def test_Endurance_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "4"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Endurance'),data="FootSoldier")
-                self.assertIn(b"4", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -670,16 +670,16 @@ class Test_Service_5_Endurance(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Intelligence(g) is 1 then the result will be -3(b) because FootSoldier -= 4 
+# varible Intelligence(g) is 1 then the result will be 1000(b) because FootSoldier += 999 
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Intelligence(TestBase):
     def test_Intelligence_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "-3"
+                p.return_value.text = "-1000"
                 response = self.client.post(url_for('Intelligence'),data="FootSoldier")
-                self.assertIn(b"-3", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -816,16 +816,16 @@ class Test_Service_5_Intelligence(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Awareness(g) is 1 then the result will be 2(b) because FootSoldier += 1 
+# varible Awareness(g) is 1 then the result will be 1000(b) because FootSoldier += 999
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Awareness(TestBase):
     def test_Awareness_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "2"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Awareness'),data="FootSoldier")
-                self.assertIn(b"2", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -962,16 +962,16 @@ class Test_Service_5_Awareness(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Dexterity(g) is 1 then the result will be 3(b) because FootSoldier += 2 
+# varible Dexterity(g) is 1 then the result will be 1000(b) because FootSoldier += 999 
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Dexterity(TestBase):
     def test_Dexterity_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "3"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Dexterity'),data="FootSoldier")
-                self.assertIn(b"3", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
@@ -1108,16 +1108,16 @@ class Test_Service_5_Dexterity(TestBase):
 
 
 # This test is checking that if the profession(p) is equal to "FootSoldier"(data) and the randomly generated 
-# varible Dodge(g) is 1 then the result will be 2(b) because FootSoldier += 1 
+# varible Dodge(g) is 1 then the result will be 1000(b) because FootSoldier += 999
 # This updated object data is then posted(p) to service-1
 class Test_Service_5_Dodge(TestBase):
     def test_Dodge_FootSoldier(self):
         with patch("requests.get") as g:
             g.return_value.text = "1"
             with patch("requests.post") as p:
-                p.return_value.text = "2"
+                p.return_value.text = "1000"
                 response = self.client.post(url_for('Dodge'),data="FootSoldier")
-                self.assertIn(b"2", response.data)
+                self.assertIn(b"1000", response.data)
 
 
 
