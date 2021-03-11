@@ -247,6 +247,7 @@ Overall I achieved 96%, 100%, 100%, 100% and 100% test coverage while testing al
 In conclusion I think this project went really well with only medium to minor issues encounter along the way, my knowledge of docker and all its modules have expanded massively and it is now my favorite deployment method, Ansible can have some major issues with its syntax and caused me a little trouble but overall its a very useful piece of configuration software to have learned.  
 
 <br>
+<br>
 
 Jenkins on the other hand, well its a brilliant and revolutionary piece of automation software when you manage to get it working, but getting there is another issue, compared to my peers I had less issues with it since I found a way to bypass jenkins sudo permissions early on but it still has a high learning curve and am I yet to utilize its full capabilities. 
 
