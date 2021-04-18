@@ -2,7 +2,7 @@
 
 
 Trello:
-https://github.com/Dwalker0357/Middle-Earth-Character-Generator
+https://trello.com/b/iq9xkiwX/lord-of-the-rings-character-generator
 <br>
 
 Middle Earth Character Generator was designed and created for my second SFIA project with QA-academy, it utilizes a collection of five micro-services that are containerized and deployed via docker-swarm stack and Jenkins CI pipeline.
